@@ -1,0 +1,26 @@
+{
+  "name": "check-same-case",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlossdr03s/check-same-case.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlossdr03s/check-same-case/issues"
+  },
+  "homepage": "https://github.com/carlossdr03s/check-same-case#readme",
+  "dependencies": {
+    "eslint": "^8.49.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.1"
+  }
+}
