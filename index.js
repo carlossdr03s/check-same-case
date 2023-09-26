@@ -11,10 +11,12 @@ function isLetter(value) {
 }
 
 function isLowerCase(value) {
-  const toLowerCase = value.toLowerCase();
+  for (let i = 0; i < alphabet.length; i++) {
+    const letter = alphabet[i];
 
-  if (toLowerCase === value) {
-    return true
+    if (letter === value) {
+      return true;
+    }
   }
 
   return false;
