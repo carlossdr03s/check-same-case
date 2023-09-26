@@ -13,5 +13,16 @@ function isLetter(c) {
 }
 
 function sameCase(a, b){
-    return 0;
+  const isFirstValueLatter = isLetter(a);
+  const isSecondValueLatter = isLetter(a);
+
+  if (!isFirstValueLatter && !isSecondValueLatter) {
+    return -1;
   }
+  
+  return 0;
+}
+
+console.log(sameCase('2', '1'));
+
+module.exports = sameCase;
