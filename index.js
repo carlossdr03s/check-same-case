@@ -1,15 +1,24 @@
 const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
-function isLetter(c) {
+function isLetter(value) {
   for (let i = 0; i < alphabet.length; i++) {
     const letter = alphabet[i];
 
-    if (letter === c) {
-      return true
+    if (letter === value) {
+      return true;
     }
-
-    return false;
   }
+}
+
+function isLowerCase(value) {
+  const toLowerCase = value.toLowerCase();
+
+  if (toLowerCase === value) {
+    return true
+  }
+
+  return false;
+}
 
 function isSameCase(c1, c2) {
   const isFirstLowerCase = isLowerCase(c1);    
@@ -29,10 +38,12 @@ function sameCase(a, b){
   if (!isFirstValueLatter && !isSecondValueLatter) {
     return -1;
   }
-  
-  return 0;
-}
 
-console.log(sameCase('2', '1'));
+  if (isSameCase(a, b)) {
+    return 1;
+  }
+} 
+ 
+console.log(sameCase('b', 'a'));
 
 module.exports = sameCase;
