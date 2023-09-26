@@ -10,6 +10,16 @@ function isLetter(c) {
 
     return false;
   }
+
+function isSameCase(c1, c2) {
+  const isFirstLowerCase = isLowerCase(c1);    
+  const isSecondLowerCase = isLowerCase(c2);  
+
+  if (isFirstLowerCase && isSecondLowerCase) {
+    return true;
+  }
+
+  return false;
 }
 
 function sameCase(a, b){
