@@ -8,6 +8,6 @@ test('passes two numbers', () => {
     expect(sameCase('a', 'b')).toEqual(1);
   });
 
-  // test('passes two latters with the different case', () => {
-  //   expect(sameCase('a', 'C')).toEqual(0);
-  // });
+  test('passes two latters with the different case', () => {
+    expect(sameCase('a', 'C')).toEqual(0);
+  });

@@ -41,9 +41,11 @@ function sameCase(a, b){
 
   if (isSameCase(a, b)) {
     return 1;
+  } else {
+    return 0;
   }
 } 
  
-console.log(sameCase('b', 'a'));
+console.log(sameCase('s', 't'));
 
 module.exports = sameCase;
